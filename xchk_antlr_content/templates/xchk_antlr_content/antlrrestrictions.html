@@ -1,0 +1,12 @@
+{% extends 'checkerapp/course_content.html' %}
+{% load xchk_instructions %}
+{% block course_content %}
+ANTLR genereert recursive descent parsers.
+<div class="alert alert-info">
+Moet misschien aparte knoop voorzien voor RDP?
+</div>
+ANTLR kan overweg met links recursieve regels, <em>maar</em> de recursie moet direct zijn. Indirecte linkse recursie gaat niet. Zie sectie 5.4 boek.
+{% endblock %}
+
+{% block assignment %}
+{% endblock %}

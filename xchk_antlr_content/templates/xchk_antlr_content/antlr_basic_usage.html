@@ -1,0 +1,13 @@
+{% extends 'checkerapp/course_content.html' %}
+{% load xchk_instructions %}
+{% block course_content %}
+<ol>
+	<li>de grammatica zelf schrijven</li>
+	<li><filename>.g4</filename> file compileren met ANTLR tool, normaal gealiast als <code>antlr4</code>. Dit produceert source code, inclusief <filename>.tokens</filename> files.</li>
+	<li>in geval van een gecompileerde doeltaal: de source code compileren, bv. <code>javac</code> runnen</li>
+	<li>optioneel: het resultaat testen. Dit gebeurt met een tool in de <filename>.jar</filename>, namelijk <code>TestRig</code>. Normaal is deze gealiast als <code>grun</code>. Inputs:<ol><li>naam van de grammatica</li><li>naam van de regel waarmee we willen beginnen parsen (root van de syntax tree)</li><li>eventuele opties, waaronder belangrijke:<ul><li>tokens</li><li>tree</li><li>gui</li><li>encoding (van de input)</li></ul></li></ol>Er zijn er ook handige voor het tracen van de constructie!</li>
+</ol>
+{% endblock %}
+
+{% block assignment %}
+{% endblock %}

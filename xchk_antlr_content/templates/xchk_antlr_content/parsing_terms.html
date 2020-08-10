@@ -1,0 +1,24 @@
+{% extends 'checkerapp/course_content.html' %}
+{% load xchk_instructions %}
+{% block course_content %}
+<dl>
+	<dt>taal</dt>
+	<dd>een verzameling geldige strings volgens een bepaalde set regels, i.e. een grammatica</dd>
+	<dt>een zin (in een bepaalde taal)</dt>
+	<dd>een geldige string</dd>
+	<dt>vertolker (voor een bepaalde taal)</dt>
+	<dd>een procedure / programma om zinnen in de taal in kwestie uit te voeren</dd>
+	<dt>vertaler (voor een bepaalde taal)</dt>
+	<dd>een procedure / programma om zinnen in de taal in kwestie om te zetten naar zinnen in een (typisch andere) taal (omzetting kan technisch binnen dezelfde taal gebeuren, al wordt dan vaak gesproken over syntaxtransformatie)</dd>
+	<dt>parser</dt>
+	<dd>een procedure / programma om zinnen in een bepaalde taal te herkennen door hun structuur te vergelijken met de grammatica</dd>
+	<dt>lexer</dt>
+	<dd>een procedure / programma om <strong>karakters</strong> te <strong>groeperen</strong> tot "tokens" (+- woorden, ook "symbols") en eventueel te klasseren in klassen van symbolen (in geschreven natuurlijke taal: woorden vs. interpunctie bijvoorbeeld)</dd>
+	<dt>parse tree / syntax tree</dt>
+	<dd>een voorstelling van hoe een zin gestructureerd is volgens de grammatica</dd>
+</dl>
+<div class="alert alert-warning">dit is nogal theoretisch, breek op in stukken en voorzie van voorbeelden</div>
+{% endblock %}
+
+{% block assignment %}
+{% endblock %}
